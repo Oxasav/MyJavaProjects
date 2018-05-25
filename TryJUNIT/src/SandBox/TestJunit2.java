@@ -36,6 +36,15 @@ public class TestJunit2 extends TestCase {
 		
 	}
 	
+	@Test
+	public void testAddTwo()
+	{
+		int a=1;
+		int b=3;
+		
+		org.junit.Assert.assertEquals(4, a+b);
+	}
+	
 	@After
 	
 	//tearDown used to close the connection or clean up activities
