@@ -2,6 +2,7 @@ package SandBox;
 
 import junit.framework.TestCase;
 import org.junit.Before;
+import org.junit.After;
 import org.junit.Test;
 import org.junit.Ignore;
 import static org.junit.Assert.assertEquals;
@@ -22,15 +23,33 @@ public class TestJunit2 extends TestCase {
 	public void testAdd()
 	{
 		//count the number of test cases
+		System.out.println("No of Test Cases = "+this.countTestCases());
+		
+		//test getName
+		String name  = this.getName();
+		System.out.println("Update Test Case Name ="+ name);
+		
+		//test setName
+		this.setName("testNewAdd");
+		String newName = this.getName();
+		System.out.println("Updated Test Case Name = "+ newName);
 		
 	}
-   String message = "Robert";	
+	
+	@After
+	
+	//tearDown used to close the connection or clean up activities
+	public void tearDown()
+	{
+		
+	}
+	
+  /* String message = "Robert";	
    MessageUtil messageUtil = new MessageUtil(message);
  
    @Test
    public void testSalutationMessage() {
       System.out.println("Inside testSalutationMessage()");
       message = "Hi!" + "Robert";
-      assertEquals(message,messageUtil.salutationMessage());
+      assertEquals(message,messageUtil.salutationMessage());*/
    }
-}
