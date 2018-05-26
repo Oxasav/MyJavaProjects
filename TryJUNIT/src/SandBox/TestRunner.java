@@ -11,7 +11,7 @@ public class TestRunner
 	
    public static void main(String[] args) 
    {
-      Result result = JUnitCore.runClasses(TestEmployeeDetails.class);
+      Result result = JUnitCore.runClasses(JunitAnnotation.class);
 		
       for (Failure failure : result.getFailures()) {
          System.out.println(failure.toString());

@@ -1,0 +1,54 @@
+package SandBox;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Ignore;
+import org.junit.Test;
+
+public class JunitAnnotation 
+{
+	//execute before class
+	@BeforeClass
+	public static void beforeClass()
+	{
+		System.out.println("in before Class");
+	}
+	
+	//execute After Class
+	@AfterClass
+	public static void afterClass()
+	{
+		System.out.println("in After Class");
+	}
+	
+	//execute Before Test
+	@Before
+	public void before()
+	{
+		System.out.println("in before");
+	}
+	
+	//execute after test
+	@After
+	public void after()
+	{
+		System.out.println("in after");
+	}
+	
+	//test case
+	@Test
+	public void test() 
+	{
+		System.out.println("in test");
+	}
+	
+	//test case ignore and will not execute
+	@Ignore
+	public void ignoreTest() 
+	{
+		System.out.println("in ignore test");
+	}
+
+}
