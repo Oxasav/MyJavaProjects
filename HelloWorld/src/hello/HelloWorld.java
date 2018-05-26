@@ -15,6 +15,12 @@ public class HelloWorld {
 		//System.out.println("Hello world");
 		//usingBufferedReader();
 		//usingScanner();O
+		boolean a = false;
+		if(a=true)
+			System.out.println("Hello");
+		else
+			System.out.println("goodbuy");
+		
 		
 		int i = 4;
 		double d = 4.0;

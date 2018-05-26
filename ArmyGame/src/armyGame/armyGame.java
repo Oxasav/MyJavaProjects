@@ -36,5 +36,6 @@ public class armyGame {
          else
              return 0;
 	}
+	
 
 }
